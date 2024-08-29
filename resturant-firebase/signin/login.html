@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Login...</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="logo_img">
+            <img src="../assests/imges/bheem.jpeg" alt="">
+        </div>
+        <div class="login_page">
+            <h1>Welcome to Admin Panel</h1>
+            <form id="loginForm">
+
+                <div class="email">
+                    <p>Email</p>
+                     <input type="text" id="login_email" placeholder="Email">
+                     <p id="login_error"></p>
+                </div>
+
+                <div class="pass">
+                    <p>Password</p>
+                    <input type="password" id="login_password" placeholder="Password">
+                </div>
+
+                <div class="login_btn">
+                    <button id="login_btn">Login</button>
+                </div>
+              
+            </form>
+        </div>
+    </div>
+   
+    
+  
+
+    <script src="../firebase.js" type="module"></script>
+    <script src="./login.js" type="module"></script>
+</body>
+</html>

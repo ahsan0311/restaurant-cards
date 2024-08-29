@@ -1,0 +1,154 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+
+    
+}
+
+.logo_img{
+    background-color: #333;
+    width: 50%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.logo_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.login_page{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+
+}
+
+.login_page h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.login_page h3 {
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#loginForm{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#loginForm input{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+#loginForm p {
+    margin-bottom: 8px;
+    color: gray;
+    font-size: 20px;
+}
+
+.login_btn button{
+    width: 100%;
+    background-color: rgb(41, 86, 48);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(41, 86, 48);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#email_error{
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+       flex-direction: column;
+       width: 100%;
+       height: 100%;
+   
+    }
+    .logo_img{
+    background-color: #333;
+       width: 100%;
+       height: 100%;
+       align-content: center;
+       text-align: center;
+   }
+   
+   .logo_img img{
+       width: 60%;
+       height: 60%;
+       object-fit: contain;
+   }
+   
+   .login_page{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+   
+   }
+   }
+   
+   @media screen and (max-width: 415px){
+       .login_page h1{
+           font-size: 35px;
+       }
+       
+       .login_page h3{
+           color: gray;
+           margin-top: 20px;
+           margin-bottom: 30px;
+           text-align: center;
+       }
+       #loginForm , #sign_up{
+           display: flex;
+           width: 80%;
+           flex-direction: column;
+           gap: 20px;
+       }
+       #loginForm input ,#sign_up input{
+           width: 100%;
+           padding: 15px 20px;
+           border-radius: 5px;
+           border: 1px solid black;
+       }
+   }
